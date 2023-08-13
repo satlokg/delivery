@@ -95,20 +95,24 @@ class DeliveryController extends Controller
             $ca=new ConsignmentAssign();
             $ca->consignment_id=$consignment->id;
             $ca->user_id=$consignment->user_id;
-            $ca->save();
+            if($ca->save()){
             statusLog($consignment->user_id,$consignment->id,auth()->user()->name.' assign to '.$consignment->getUser($consignment->user_id));
             $userSchema = User::first(auth()->user()->id);
   
-        $offerData = [
+             $offerData = [
             
-            'info' => $consignment->id,auth()->user()->name.' assign to '.$consignment->getUser($consignment->user_id),
-            'thanks' => 'Thank you',
-            'title' => 'Status update for delivery',
-            'offerUrl' => url('/'),
-            'consinment_id' => $consignment->uuid
-        ];
+                'info' => $consignment->id,auth()->user()->name.' assign to '.$consignment->getUser($consignment->user_id),
+                'thanks' => 'Thank you',
+                'title' => 'Status update for delivery',
+                'offerUrl' => url('/'),
+                'consinment_id' => $consignment->uuid
+            ];
   
         FacadesNotification::send($userSchema, new LogNotification($offerData));
+        return redirect()->back();
+       }else{
+            return redirect()->back();
+       }
         }
 
     

@@ -16,13 +16,13 @@
               <!-- text input -->
               <div class="form-group">
                 <label>Title</label>
-                <input type="text" class="form-control" value="" placeholder="Enter ..." name="dtitle">
+                <input type="text" class="form-control" value="" placeholder="Enter ..." name="dtitle" required>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
                 <label>Type</label>
-                <input type="text" class="form-control" value="" placeholder="Enter ..." name="dtype" >
+                <input type="text" class="form-control" value="" placeholder="Enter ..." name="dtype"  required>
               </div>
             </div>
             
@@ -30,7 +30,7 @@
             <div class="col-sm-6">
               <div class="form-group">
                 <label>Take a picture</label>
-                <input type="file" name="images[]" multiple accept="image/*;capture=camera" class="form-control" id="imgInp">
+                <input type="file" name="images[]" multiple accept="image/*;capture=camera" class="form-control" id="imgInp"  required>
               </div>
               <img id="blah" src="#" alt="your image" class="img" />
             </div>

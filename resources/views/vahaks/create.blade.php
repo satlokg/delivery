@@ -17,31 +17,31 @@
               <!-- text input -->
               <div class="form-group">
                 <label>Name</label>
-                <input type="text" class="form-control" value="" placeholder="Enter ..." name="name">
+                <input type="text" class="form-control" value="" placeholder="Enter ..." name="name" required>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
                 <label>Email</label>
-                <input type="email" class="form-control" value="" placeholder="Enter ..." name="email" >
+                <input type="email" class="form-control" value="" placeholder="Enter ..." name="email" required >
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
                 <label>Phone</label>
-                <input type="text" class="form-control" value="" placeholder="Enter ..." name="phone" >
+                <input type="number" max="10" class="form-control" value="" placeholder="Enter ..." name="phone" required >
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
                 <label>PNO No.</label>
-                <input type="text" class="form-control" value="" placeholder="Enter ..." name="pno_no" >
+                <input type="text" class="form-control" value="" placeholder="Enter ..." name="pno_no" required >
               </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                   <label>Password</label>
-                  <input type="text" class="form-control" value="" placeholder="Enter ..." name="password" >
+                  <input type="text" class="form-control" value="" placeholder="Enter ..." name="password" required >
                 </div>
               </div>
             

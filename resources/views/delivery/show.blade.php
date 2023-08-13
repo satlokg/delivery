@@ -71,7 +71,7 @@ ul.timeline > li:before {
             <div class="col-sm-6">
                 <div class="form-group">
                 <label>Change Status</label>
-                <select name="status" id="user_id" class="form-control">
+                <select name="status" id="user_id" class="form-control" required>
                     <option value="">--Select Status--</option>
                         <option value="transit">transit</option>
                         <option value="accepted">accepted</option>
@@ -106,12 +106,12 @@ ul.timeline > li:before {
             <div class="modal-body">
                 <div class="form-group">
                     <label>Take a picture</label>
-                    <input type="file" name="images" accept="image/*;capture=camera" class="form-control" id="imgInp">
+                    <input type="file" name="images" accept="image/*;capture=camera" class="form-control" id="imgInp" required>
                   </div>
                   <img id="blah" src="#" alt="your image" class="img" />
                 <div class="form-group">
                 <label>Change Status</label>
-                <textarea class="form-control" name="info"></textarea>
+                <textarea class="form-control" name="info" required></textarea>
                 </div>
                    
                 
