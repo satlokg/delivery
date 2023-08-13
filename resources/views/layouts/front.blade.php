@@ -26,7 +26,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   @yield('style')
   <style>
   .main-footer {
-    background-color: #e31818;
+    background-color: #18c5e3;
     border-top: 1px solid #dee2e6;
     color: #fff;
     padding: 1rem;
@@ -51,21 +51,21 @@ a {
 }
   .btn-secondary {
     color: #fff;
-    background-color: #084377;
+    background-color: #3c75a6;
     border-color: #6c757d;
     box-shadow: none;
 }
   [class*=sidebar-dark-] {
-    background-color: #340879;
+    background-color: #3c75a6;
 }
 
 [class*=sidebar-dark] .btn-sidebar, [class*=sidebar-dark] .form-control-sidebar {
-    background-color: #b80c0c;
+    background-color: #18c5e3;
     border: 1px solid #56606a;
     color: #fff;
 }
 .navbar-white {
-    background-color: #db0707;
+    background-color: #18c5e3;
     color: #fff;
 }
  .btn-sm {
@@ -136,10 +136,10 @@ a {
   <footer class="main-footer">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
-      Anything you want
+      {{--  Anything you want --}}
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2021 <a href="#">Venus Global</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2020-2025 <a href="#">Venus Global</a>.</strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->
