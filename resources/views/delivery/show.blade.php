@@ -163,7 +163,7 @@ ul.timeline > li:before {
                                 <b href="#">Delivery Status (done)</b>
                                 <small >{{$slog->created_at->diffForHumans()}}</small>
                                 <p>{{$slog->info}}</p>
-                                <p>Latitute-{{$slog->lati}} longitude-{{$slog->longi}}</p>
+                                <p>Latitute-{{$slog->late}} longitude-{{$slog->longi}}</p>
                                 <img src="{{ asset('uploads/'.$slog->image) }}" class="img img-thumbnail">
                             </li>
                             @endforeach
