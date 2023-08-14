@@ -18,8 +18,8 @@
                 <th>Title</th>
                 <th>Type </th>
                 <th>Assign To</th>
-                <th>Essued By</th>
-                <th>Essued Date</th>
+                <th>Issued By</th>
+                <th>Issued Date</th>
                 <th>Last update</th>
                 <th>Status</th>
                 <th>Action</th>

@@ -161,7 +161,7 @@ ul.timeline > li:before {
                             @foreach($data->dellog->sort() as $slog)
                             <li>
                                 <b href="#">Delivery Status (done)</b>
-                                <small >{{$slog->created_at->diffForHumans()}}</small>
+                                <small >{{$slog->created_at }}</small>
                                 <p>{{$slog->info}}</p>
                                 <p>Latitute-{{$slog->late}} longitude-{{$slog->longi}}</p>
                                 <img src="{{ asset('uploads/'.$slog->image) }}" class="img img-thumbnail">
@@ -170,7 +170,7 @@ ul.timeline > li:before {
                             @endif
                            @foreach($data->statuslog->sort() as $slog)
                             <li>
-                                <small >{{$slog->created_at->diffForHumans()}}</small>
+                                <small >{{$slog->created_at }}</small>
                                 <p>{{$slog->info}}</p>
                             </li>
                             @endforeach

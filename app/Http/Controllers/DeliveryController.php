@@ -30,10 +30,10 @@ class DeliveryController extends Controller
                         return $row->getUser($row->user_id);
                     })
                     ->addColumn('created_at', function($row){
-                        return $row->created_at->diffForHumans();
+                        return $row->created_at ;
                     })
                     ->addColumn('updated_at', function($row){
-                        return $row->updated_at->diffForHumans();
+                        return $row->updated_at ;
                     })
                     ->addColumn('created_by', function($row){
                         return $row->getUser($row->created_by);
@@ -56,10 +56,10 @@ class DeliveryController extends Controller
                         return $row->getUser($row->user_id);
                     })
                     ->addColumn('created_at', function($row){
-                        return $row->created_at->diffForHumans();
+                        return $row->created_at ;
                     })
                     ->addColumn('updated_at', function($row){
-                        return $row->updated_at->diffForHumans();
+                        return $row->updated_at ;
                     })
                     ->addColumn('created_by', function($row){
                         return $row->getUser($row->created_by);
