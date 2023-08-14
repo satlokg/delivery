@@ -29,7 +29,7 @@
             <div class="col-sm-6">
               <div class="form-group">
                 <label>Phone</label>
-                <input type="number" max="10" class="form-control" value="" placeholder="Enter ..." name="phone" required >
+                <input type="number"   class="form-control" value="" placeholder="Enter ..." name="phone" required >
               </div>
             </div>
             <div class="col-sm-6">

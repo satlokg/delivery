@@ -97,7 +97,7 @@ class DeliveryController extends Controller
             $ca->user_id=$consignment->user_id;
             if($ca->save()){
             statusLog($consignment->user_id,$consignment->id,auth()->user()->name.' assign to '.$consignment->getUser($consignment->user_id));
-            $userSchema = User::first(auth()->user()->id);
+            $userSchema = User::find(auth()->user()->id);
   
              $offerData = [
             
@@ -160,7 +160,7 @@ class DeliveryController extends Controller
        if($res){
         // $res= Consignment::where('id',$id)->update(['status'=>'accepted']);
         statusLog(auth()->user()->id,$id,auth()->user()->name.' change status to '.$request->status);
-        $userSchema = User::first(auth()->user()->id);
+        $userSchema = User::find(auth()->user()->id);
   
         $offerData = [
             
@@ -197,7 +197,7 @@ class DeliveryController extends Controller
 
         // $res= Consignment::where('id',$id)->update(['status'=>'accepted']);
         statusLog(auth()->user()->id,$id,auth()->user()->name.' delivered to destination'.$consignment->getUser($request->user_id));
-        $userSchema = User::first(auth()->user()->id);
+        $userSchema = User::find(auth()->user()->id);
   
         $offerData = [
             
