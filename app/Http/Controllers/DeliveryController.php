@@ -134,7 +134,7 @@ class DeliveryController extends Controller
        if($ca){
         // $res= Consignment::where('id',$id)->update(['status'=>'accepted']);
         statusLog(auth()->user()->id,$id,auth()->user()->name.' assign to '.$consignment->getUser($request->user_id));
-        $userSchema = User::first(auth()->user()->id);
+        $userSchema = User::find(auth()->user()->id);
   
         $offerData = [
             
